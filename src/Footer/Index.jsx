@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Footer.css";
-import Logo from "../assets/images/logo.svg";
+import Logo from "../assets/images/logo.png";
 import { IoLocationOutline } from "react-icons/io5";
 import { MdOutlinePhone } from "react-icons/md";
 import { MdOutlineEmail } from "react-icons/md";

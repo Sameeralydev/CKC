@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router";
 import "./Navbar.css";
 import Navbar_line from "../assets/images/navbar.png";
-import Logo from "../assets/images/logo.svg";
+import Logo from "../assets/images/logo.png";
 import {
   MdKeyboardArrowDown,
   MdKeyboardArrowUp,

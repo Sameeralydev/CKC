@@ -27,28 +27,34 @@ export const AboutSection = () => {
       {/* --- Introductory Text Section --- */}
       <div className="intro-section container" data-aos="fade-up">
         <p className="intro-text">
-          We share with our Associates the best practices, expertise and muscle to give them an unparalleled edge over all others. 
-          We understand the many stages of setting up and running a school and have developed a system to facilitate our Associates every step of the way.
+          We collaborate closely with our Associates, sharing proven practices, expertise,
+          and strong support systems to provide them with a distinct advantage. 
+          Understanding the different phases of establishing and managing a school, 
+          we have designed a seamless framework to guide our Associates at every step.
         </p>
         
         {/* --- TYPES OF SCHOOLS Section --- */}
         <h2 className="section-heading types-of-schools-heading">TYPES OF SCHOOLS</h2>
         <ul className="types-of-schools-list">
           <li data-aos="fade-right" data-aos-delay="100">
-            A school may be constructed on available land or an existing building refurbished according to the given parameters.
+            A school may be developed on newly available land or an existing facility 
+            can be upgraded according to our recommended standards and design.
           </li>
           <li data-aos="fade-right" data-aos-delay="200">
-            The corresponding Network Association fee and royalty are as indicated against each school.
+            The respective Network Association fee and royalty structure are linked 
+            with each school category.
           </li>
           <li data-aos="fade-right" data-aos-delay="300">
-            All areas are in square feet.
+            All mentioned area measurements are given in square feet for clarity.
           </li>
         </ul>
       </div>
 
       {/* --- FRANCHISE MODELS Heading --- */}
       <div className="models-header-bg">
-        <h1 className="franchise-models-heading" data-aos="zoom-in">FRANCHISE MODELS</h1>
+        <h1 className="franchise-models-heading" data-aos="zoom-in">
+          FRANCHISE MODELS
+        </h1>
       </div>
 
       {/* --- Circular Cards Grid --- */}
@@ -57,7 +63,6 @@ export const AboutSection = () => {
           <div 
             key={index} 
             className={`model-circle ${model.type}`}
-            // Staggered animation delay
             data-aos="flip-left" 
             data-aos-delay={100 + index * 100}
           >

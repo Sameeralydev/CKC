@@ -28,12 +28,15 @@ export const AboutSection = () => {
                 Chairman's Message
             </h1>
             <p className="fac-about-desp">
-              It gives me great pleasure to introduce you and your child to Future Foundation Schools, where so many wonderful learning opportunities and experiences are just waiting for them. It truly is a great place to think and grow! 
-To help children look at the world differently, we build philosophical enquiry for children into much of what we do it encourages our children to develop open, enquiring minds, value reasoning, develop self-confidence and be respectful of different opinions
-We aim to inspire every child as creative and challenging by nurturing their abilities to achieve their very best. Our school isn’t just about knowledge and skills though; it’s also about inspiring children to be critical thinkers and look at the world differently and about challenging them to be fascinated by lessons and subjects.
-A key factor in your child’s learning journey is the mentors they interact with, and we have a highly experienced, skillful, dedicated teaching and support staff. They work together to provide flexibility in meeting the needs of all pupils.
-I wish the best of luck to all the parents, staff and students who are the golden part of the Future Foundation Family. I pray for realizing the dream of a successful life in the world and the world hereafter. 
+              It gives me great pleasure to welcome you and your child to Crescent Kids Campus, where countless learning opportunities and meaningful experiences await them. It truly is a wonderful place for young minds to think, grow, and explore.
 
+To help children view the world with curiosity and depth, we integrate philosophical inquiry into much of our teaching. This approach encourages students to develop open and enquiring minds, value reasoning, build self-confidence, and show respect for diverse perspectives.
+
+At Crescent Kids Campus, our mission is to inspire every child to be creative, confident, and challenged in a healthy way. We nurture their abilities so they can achieve their fullest potential. Our focus is not only on academic learning but also on inspiring students to become critical thinkers who engage with the world differently and take genuine interest in their lessons and subjects.
+
+A crucial part of your child’s educational journey is the guidance they receive from our mentors. We are proud to have a highly skilled, experienced, and dedicated team of teachers and support staff. Together, they work with flexibility and commitment to meet the needs of every learner.
+
+I extend my best wishes to all parents, staff, and students who form the golden part of the Crescent Kids Family. I pray that all of us continue to progress and achieve success in this life and the hereafter.
             </p>
           </div>
           <div className="col-4">

@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./Hero.css";
-import Dream from "../../../assets/video/DREAM.mp4";
+// import Dream from "../../../assets/video/DREAM.mp4";
+import logo from "../../../assets/images/logo.png";
 import Hero from "../../../assets/images/hero_one.png";
 import Hero_one from "../../../assets/images/hero_two.png";
 import Hero_two from "../../../assets/images/hero.png";
@@ -61,10 +62,12 @@ export const HeroSection = () => {
   return (
     <div className="container-fluid p-0  position-relative hero_main_div">
       <div className="video_container">
-        <video controls width="100%" autoPlay muted loop id="customVideo">
+        {/* <video controls width="100%" autoPlay muted loop id="customVideo">
           <source src={Dream} type="video/mp4" />
           Your browser does not support the video tag.
-        </video>
+        </video> */}
+        
+        <img src={logo} alt="Logo" />
       </div>
       <img src={Hero} alt="" className="hero_img " />
       <img src={Hero_one} alt="" className="hero_img_one " />
@@ -77,9 +80,8 @@ export const HeroSection = () => {
             <p className="hero_title">About Us</p>
             <p className="hero_sub_title">A Leading School Chain in Pakistan</p>
             <p className="hero_desp">
-              In the year 1998, Future Foundation School started its journey to
-              meet the goals set by the leardership of Rana Sohail Ahmad & Mrs.
-              Rana Sohail Ahmad. Since then it has been continuously growing by
+              In the year 1998, Cresent Kids Campus started its journey to
+              meet the goals set by the leardership of John Doe. Since then it has been continuously growing by
               the grace of ALLAH Alimighty.
             </p>
             <p className="hero_desp pt-4">
@@ -133,10 +135,14 @@ export const HeroSection = () => {
             </button>
 
             <h3 className="modal-head" >About Future Foundation</h3>
-            <p className="modal-desp" style={{ fontFamily:"Montserrat", marginBottom: "0.5rem", lineHeight: 1.6 }}>
-              The inspiration behind establishing Future Foundation School came from our leader, Rana Sohail Ahmad, who had a strong ambition to reform the community through education. Throughout his career, he made significant efforts to improve various aspects of education in society. In 1998, Future Foundation School embarked on its journey to fulfill the vision set by Rana Sohail Ahmad and Mrs. Rana Sohail Ahmad. Since its inception, the school has been continuously growing, thanks to the grace of ALLAH Almighty. Over time, the school has achieved numerous educational and societal milestones, always remaining committed to promoting national and Islamic values while uplifting educational standards. Future Foundation School has proudly secured 1st position worldwide in the Federal Board examinations, achieving this remarkable feat two times, once in 2019 and again in 2024.
+            <p className="modal-desp" style={{ fontFamily: "Montserrat", marginBottom: "0.5rem", lineHeight: 1.6 }}>
+              The inspiration behind establishing Crescent Kids Campus came from our visionary leader, Mr. Ahmed Raza, who held a strong ambition to uplift the community through quality education. Throughout his career, he dedicated his efforts to improving various aspects of the educational system.
+
+              In 1998, Crescent Kids Campus began its journey to fulfill the vision set by Mr. Ahmed Raza and Mrs. Ahmed Raza. Since its inception, the campus has continuously progressed, by the grace of ALLAH Almighty. Over the years, it has achieved several educational and societal milestones, always staying committed to promoting national and Islamic values while enhancing academic standards.
+
+              Crescent Kids Campus has proudly secured 1st position worldwide in the Federal Board examinations — achieving this remarkable accomplishment twice, once in 2019, and again in 2024.
             </p>
-           
+
           </div>
         </div>
       )}

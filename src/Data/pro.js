@@ -34,7 +34,7 @@ export const messages = {
         mentors they interact with, and we have a highly experienced,
         skillful, dedicated teaching and support staff. They work together
         to provide flexibility in meeting the needs of all pupils.`,
-    owner: "Rana Sohail Ahmed",
+    owner: "Atif Iqbal Shaheen",
     designation: "Founder & Chairman",
   },
   Principal: {
