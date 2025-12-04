@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./Register.css";
-import Register from "../../../assets/images/register.png";
 import { MdArrowForward } from "react-icons/md";
 import AOS from "aos";
+import logo from "../../../assets/images/logo.png";
 import "aos/dist/aos.css";
 
 export const RegisterSection = () => {
@@ -20,9 +20,9 @@ export const RegisterSection = () => {
     <div className="container-fluid p-0 register_bg">
       <div className="row m-0 register_main">
         <div className="col-lg-6 p-0">
-          <img src={Register} alt="" data-aos="fade-up" />
-        </div>
-        <div className="col-lg-6">
+          <img src={logo} alt="" data-aos="fade-up" />
+          </div>
+          <div className="col-lg-6">
           <p className="reg_name" data-aos="fade-up">
             Register Yourself For Franchise
           </p>

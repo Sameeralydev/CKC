@@ -138,16 +138,18 @@ export const Footer = () => {
               <div className="d-flex gap-3">
                 <IoLocationOutline className="footer_icon" />
                 <p className="footer_loc">
-                  Bandi Khana Chowk, Murree Road, Rawalpindi
+                  
+47 Rachna Block Allama Iqbal Town, Lahore, Pakistan, 54000
                 </p>
               </div>
               <div className="d-flex align-items-center gap-3">
                 <MdOutlinePhone className="footer_icon" />
-                <p className="footer_loc">051-0000007</p>
+                <p className="footer_loc">
+0335 4677850</p>
               </div>
               <div className="d-flex align-items-center gap-3">
                 <MdOutlineEmail className="footer_icon" />
-                <p className="footer_loc">info@fttrack.pk</p>
+                <p className="footer_loc">ckcseniorcampus@gmail.com</p>
               </div>
             </div>
           </div>
@@ -182,7 +184,7 @@ export const Footer = () => {
         <img src={Hand} alt="" className="footer-hand" />
         <img src={Cloud} alt="" className="footer-cloud-two" />
         <p className="footer_copyright">
-          Copyright © 2024 Future Foundation Schools. All Right Reserved.
+          Copyright © 2024 Crescent Kids Campus. All Right Reserved.
         </p>
         <div className="d-flex justify-content-center">
           <div className="footer_line" />

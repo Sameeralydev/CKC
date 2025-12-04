@@ -80,8 +80,9 @@ export const LocationSection = () => {
           </div>
         </div>
         <div className="col-lg-6 p-0">
+          
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106389.83298142784!2d72.93574724333932!3d33.561630353449104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df948974419acb%3A0x984357e1632d30f!2sRawalpindi%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1739156070719!5m2!1sen!2s"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5456.456905168348!2d74.28240618326417!3d31.51203050375939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919030a59922d11%3A0xb268c975b602d932!2sCrescent%20Kids%20Campus%20High%20School!5e0!3m2!1sen!2s!4v1764852669637!5m2!1sen!2s"
             className="map_load"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"

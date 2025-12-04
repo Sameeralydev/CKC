@@ -54,10 +54,10 @@ export const AboutSection = () => {
         <img src={About_rocket} alt="" className="about_rocket_img d-none d-lg-block" data-aos="fade-up" />
         <img src={Homework} alt="" className="homework_img d-none d-lg-block" data-aos="fade-up" />
         
-        <p className="about_title text-center text-lg-start" data-aos="fade-up">
+        <p className="about_title text-center " data-aos="fade-up">
           Message
         </p>
-        <p className="about_desp text-center text-lg-start" data-aos="fade-up">
+        <p className="about_desp text-center " data-aos="fade-up">
           Our Leadership Messages
         </p>
 
