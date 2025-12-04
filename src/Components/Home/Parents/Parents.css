@@ -1,0 +1,44 @@
+@import url('../../../App.css');
+
+.parents_main {
+    position: relative;
+    margin-top: 90px;
+    overflow: hidden;
+}
+
+.parents_main_card{
+    border-radius: 30px;
+    padding: 40px 20px;
+}
+
+.parent_card{
+    background: #DFE0EC;
+    color: var(--blackColor);
+}
+
+.parents_active{
+    background: var(--secondaryblueColor);
+    color: var(--whiteColor);
+}
+
+.parent_title {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 0;
+}
+
+.parent_title_color{
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--secondaryblueColor);
+    margin-bottom: 0;
+}
+
+.parent_date {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 0;
+}

@@ -1,0 +1,101 @@
+@import url('../../../App.css');
+
+.register_bg{
+    background-image: url("../../../assets/images/register_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 520px;
+    z-index: 0;
+}
+
+.register_bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../../assets/images/register_bg_one.png"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    z-index: 0;
+}
+
+.register_main{
+    position: relative;
+    z-index: 1;
+}
+
+.reg_name {
+    font-family: 'RecoletaAlt';
+    font-size: 65px;
+    line-height: 86px;
+    color: var(--whiteColor);
+    margin-bottom: 0;
+    padding-top: 100px;
+    width: 500px;
+}
+
+.reg_desp {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: 23px;
+    color: var(--whiteColor);
+    margin-bottom: 0;
+    margin-top: 30px;
+    width: 600px;
+}
+
+.reg_btn {
+    border-radius: 50px;
+    padding: 8px 10px 8px 25px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    display: flex;
+    gap: 20px;
+    background: var(--primaryColor);
+    border: none;
+    align-items: center;
+    color: var(--whiteColor);
+    margin-top: 22px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.reg_btn:hover {
+    transform: scale(1.1);
+}
+
+.reg_circle {
+    border-radius: 50px;
+    background: var(--whiteColor);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reg_circle_icon {
+    color: var(--primaryColor);
+    font-size: 20px;
+}
+
+.reg_btn_one {
+    border-radius: 50px;
+    padding: 8px 10px 8px 25px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    display: flex;
+    gap: 20px;
+    background: #5666A5;
+    border: none;
+    align-items: center;
+    color: var(--whiteColor);
+    margin-top: 22px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.reg_btn_one:hover {
+    transform: scale(1.1);
+}

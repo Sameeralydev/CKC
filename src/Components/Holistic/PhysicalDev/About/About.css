@@ -1,0 +1,48 @@
+@import url('../../../../App.css');
+
+.phydev-about-main{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--secondaryblueColor);
+    text-align: center;
+}
+
+.bg-phydev-color{
+    background: #f0e2c8;
+}
+
+.phydev-about-title{
+    width: max-content;
+    text-decoration: underline;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+
+.phydev-about-desp{
+    width: 750px;
+    word-spacing: 2px;
+    font-family: 'RecoletaAlt';
+    text-align: center;
+    z-index: 1;
+}
+
+.phydev-specs{
+    width: 450px;
+    margin-bottom: 30px;
+    margin-top: -7px;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    font-family: 'RecoletaAlt';
+}
+
+.phydev-card:hover{
+    background: var(--secondaryblueColor);
+    color: white;
+}

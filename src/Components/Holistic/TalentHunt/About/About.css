@@ -1,0 +1,62 @@
+@import url('../../../../App.css');
+
+.talenthunt-about-main{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--secondaryblueColor);
+    text-align: center;
+}
+
+.bg-talenthunt-color{
+    background: #f0e2c8;
+}
+
+.talenthunt-about-title{
+    width: max-content;
+    text-decoration: underline;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+.span{
+    font-style: italic;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.talenthunt-about-desp{
+    width: 750px;
+    word-spacing: 2px;
+    font-family: 'RecoletaAlt';
+    text-align: center;
+    z-index: 1;
+}
+.talenthunt-about-desp-head{
+    text-decoration: underline;
+     width: 750px;
+     font-weight: 700;
+    word-spacing: 2px;
+    font-family: 'RecoletaAlt';
+    text-align: center;
+    z-index: 1;
+
+}
+
+.talenthunt-specs{
+    width: 600px;
+    margin-bottom: 30px;
+    margin-top: -7px;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    font-family: 'RecoletaAlt';
+}
+
+.talenthunt-card:hover{
+    background: var(--secondaryblueColor);
+    color: white;
+}

@@ -1,0 +1,54 @@
+@import url('../../../../App.css');
+
+.dgedu-about-main{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--secondaryblueColor);
+    text-align: center;
+}
+
+.bg-dgedu-color{
+    background: #f0e2c8;
+}
+
+.dgedu-about-title{
+    text-decoration: underline;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.dgedu-about-desp{
+    width: 750px;
+    word-spacing: 2px;
+    font-family: 'RecoletaAlt';
+    text-align: center;
+    z-index: 1;
+}
+
+.dgedu-about-desp span{
+    font-weight: 800;
+}
+.dgedu-specs-title{
+    width: max-content;
+    text-decoration: underline;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    text-align: center;
+}
+
+.dgedu-specs-head{
+    margin: 15px 0 10px 0;
+    width: max-content;
+    text-decoration: underline;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    text-align: left;
+}
+
+.dgedu-card:hover{
+    background: var(--secondaryblueColor);
+    color: white;
+}

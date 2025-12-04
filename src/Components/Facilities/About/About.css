@@ -1,0 +1,29 @@
+@import url('../../../App.css');
+
+.fac-about-main{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--secondaryblueColor);
+    text-align: center;
+}
+
+.bg-fac-color{
+    background: #f0e2c8;
+}
+
+.fac-about-title{
+    font-family: 'Montserrat';
+    font-weight: 800;
+    text-align: center;
+}
+
+.fac-about-desp{
+    font-family: 'RecoletaAlt';
+    text-align: center;
+}
+
+.fac-card:hover{
+    background: var(--secondaryblueColor);
+    color: white;
+}

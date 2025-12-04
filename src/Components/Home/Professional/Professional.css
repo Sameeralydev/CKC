@@ -1,0 +1,169 @@
+@import url('../../../App.css');
+
+.professional_main {
+  margin-top: 2rem;
+}
+
+.rainbow_img {
+  position: absolute;
+  right: -20px;
+  top: -120px;
+  width: 200px !important;
+}
+
+.buterfly_img {
+  position: absolute;
+  left: -20px;
+  top: -10px;
+  width: 100px !important;
+}
+
+.pro_img_one {
+  position: absolute;
+  left: 40%;
+  top: 5px;
+  width: 100px;
+  animation: ProArrow 2s infinite ease-in-out;
+}
+
+@keyframes ProArrow {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.pro_img {
+  width: 300px;
+  height: 350px;
+  padding-top: 90px;
+  z-index: 1;
+}
+
+.pro_height {
+  height: 350px;
+}
+
+.pro_name:hover{
+  color: var(--blueColor);
+  cursor: pointer;
+}
+
+.student_color{
+  background: var(--blueColor);
+  height: 350px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.study_img{
+  width: 250px;
+  position: absolute;
+  top: -15px;
+  z-index: 1;
+}
+
+.cycle_img{
+  width: 250px;
+  position: absolute;
+  top: -15px;
+  right: 10px;
+  z-index: 1;
+}
+
+.alpha{
+  position: absolute;
+  top: 10px;
+  z-index: 0;
+  width: 90%;
+}
+
+.counter_div{
+  padding: 80px 200px 0px 200px;
+}
+
+.elementor-heading-title {
+  color: #71D1CC;
+  font-family: "Bubblegum Sans", Sans-serif;
+  font-size: 82px;
+  font-weight: 400;
+  line-height: 1.3em;
+  position: absolute;
+  left: 300px;
+  top: 20px;
+}
+
+.elementor-heading-title-b {
+  color: #FCCB13;
+  font-family: "Bubblegum Sans", Sans-serif;
+  font-size: 82px;
+  font-weight: 400;
+  line-height: 1.3em;
+  position: absolute;
+  left: 680px;
+  top: 20px;
+}
+
+.elementor-heading-title-4 {
+  color: #1CBBB4;
+  font-family: "Bubblegum Sans", Sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 1.3em;
+  position: absolute;
+  right: 680px;
+  top: 45px;
+}
+
+.elementor-heading-title-3 {
+  color: #1CBBB4;
+  font-family: "Bubblegum Sans", Sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 1.3em;
+  position: absolute;
+  right: 630px;
+  top: 15x;
+}
+
+.elementor-heading-title-5 {
+  color: #FCCB13;
+  font-family: "Bubblegum Sans", Sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 1.3em;
+  position: absolute;
+  right: 570px;
+  top: 30px;
+}
+
+.wdt-content-counter {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.3em;
+  color: var(--whiteColor);
+  margin-bottom: 0;
+}
+
+.wdt-content-counters {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.3em;
+  color: var(--whiteColor);
+}
+
+.rounded_img{
+  width: 120px;
+}
+
+.one_img{
+  position: absolute;
+  left: 150px;
+  top: 19px;
+  width: 60px;
+}

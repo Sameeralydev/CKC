@@ -1,0 +1,37 @@
+@import url('../../../../App.css');
+
+.qos-about-main{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--secondaryblueColor);
+    text-align: center;
+}
+
+.bg-qos-color{
+    background: #f0e2c8;
+}
+
+.qos-about-title{
+    width: max-content;
+    text-decoration: underline;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+
+.qos-about-desp{
+    width: 750px;
+    word-spacing: 2px;
+    font-family: 'RecoletaAlt';
+    text-align: center;
+    z-index: 1;
+}
+
+.qos-card:hover{
+    background: var(--secondaryblueColor);
+    color: white;
+}

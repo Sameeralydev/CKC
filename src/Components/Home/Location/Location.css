@@ -1,0 +1,246 @@
+@import url('../../../App.css');
+
+.location_main_div {
+    margin-top: 130rem;
+}
+
+.location_bg {
+    background-image: url("../../../assets/images/map_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.map_icon {
+    position: absolute;
+    left: -120px;
+    width: 390px;
+}
+
+.map_yellow_circle {
+    position: absolute;
+    top: 250px;
+    left: -80px;
+}
+
+.map_load{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.map_line {
+    position: absolute;
+    right: 0;
+    top: -20px;
+    clip-path: inset(0 0 100% 100%);
+    animation: drawLines 3s linear infinite;
+    width: 250px;
+    z-index: 1;
+}
+
+.map_main_div {
+    padding: 100px 120px 50px 200px;
+}
+
+.map_one_img {
+    position: absolute;
+    left: 6px;
+    top: 14px;
+}
+
+.map_two_img {
+    position: absolute;
+    left: 13px;
+    top: 23px;
+}
+
+.map_name {
+    font-family: 'Montserrat';
+    font-size: 77px;
+    line-height: 77px;
+    color: var(--blueColor);
+    margin-bottom: 0;
+}
+
+.map_cap {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    color: var(--primaryColor);
+    margin-bottom: 0;
+}
+
+.map_loc {
+    font-family: 'RecoletaAlt';
+    font-size: 65px;
+    line-height: 60px;
+    color: var(--blueColor);
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+
+.map_find{
+    font-family: 'RecoletaAlt';
+    font-size: 27px;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+.map_input_body{
+    background: var(--whiteColor);
+    border-radius: 50px;
+    padding: 5px 5px 5px 15px;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.map_input{
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.map_find_now{
+    background: var(--blueColor);
+    padding: 10px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    color: var(--whiteColor);
+    border: none;
+    border-radius: 50px;
+    width: 130px;
+}
+
+.map_circle_img{
+    position: absolute;
+    right: 200px;
+    top: 120px;
+    animation: movemapTopBottom 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes movemapTopBottom {
+    0% {
+        transform: translateY(0px); /* Start position */
+    }
+
+    100% {
+        transform: translateY(12px); /* Move down smoothly */
+    }
+}
+
+.map_rocket{
+    position: absolute;
+    right: 250px;
+    top: 78px;
+}
+
+@media(min-width: 1200px) and (max-width: 1400px) {
+    .location_main_div {
+        margin-top: 137.5rem;
+    }
+
+    .map_main_div {
+        padding: 100px 90px 50px 90px;
+    }
+}
+
+@media(min-width: 992px) and (max-width: 1200px) {
+    .location_main_div {
+        margin-top: 155.4rem;
+    }
+
+    .map_main_div {
+        padding: 100px 90px 50px 90px;
+    }
+
+    .map_line {
+        width: 180px;
+    }
+
+    .map_rocket {
+        right: 180px;
+        top: 45px;
+    }
+
+    .map_loc {
+        font-size: 45px;
+        line-height: 60px;
+    }
+
+    .map_find {
+        font-size: 20px;
+    }
+
+    .map_find_now {
+        padding: 10px;
+        font-size: 12px;
+        width: 130px;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 992px) {
+    .location_main_div {
+        margin-top: 210.3rem;
+    }
+
+    .map_load{
+        height: 500px;
+    }
+}
+
+@media(min-width: 576px) and (max-width: 768px) {
+    .location_main_div {
+        margin-top: 212.2rem;
+    }
+
+    .map_main_div {
+        padding: 100px 50px 50px 90px;
+    }
+
+    .map_load{
+        height: 500px;
+    }
+}
+
+@media(max-width: 576px) {
+    .location_main_div {
+        margin-top: 206.5rem;
+    }
+
+    .map_line {
+        display: none;
+    }
+
+    .map_rocket {
+        display: none;
+    }
+
+    .map_main_div {
+        padding: 100px 50px 50px 90px;
+    }
+
+    .map_load{
+        height: 500px;
+    }
+
+    .map_loc {
+        font-size: 45px;
+        line-height: 60px;
+    }
+
+    .map_find {
+        font-size: 20px;
+    }
+
+    .map_find_now {
+        padding: 10px;
+        font-size: 12px;
+        width: 130px;
+    }
+
+    .map_circle_img {
+        right: 50px;
+    }
+}

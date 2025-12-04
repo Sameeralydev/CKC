@@ -1,0 +1,47 @@
+@import url('../../../../App.css');
+
+.steam-about-main{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--secondaryblueColor);
+    text-align: center;
+}
+
+.bg-steam-color{
+    background: #f0e2c8;
+}
+
+.steam-about-title{
+    width: max-content;
+    text-decoration: underline;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+.steam-about-title span{
+    width: max-content;
+    /* text-decoration: underline; */
+    font-family: 'Montserrat';
+    font-size: 25px;
+    font-weight: 800;
+    text-align: center;
+    position: relative;
+    bottom: 8px;
+    z-index: 1;
+}
+
+.steam-about-desp{
+    width: 750px;
+    word-spacing: 2px;
+    font-family: 'RecoletaAlt';
+    text-align: center;
+    z-index: 1;
+}
+
+.steam-card:hover{
+    background: var(--secondaryblueColor);
+    color: white;
+}

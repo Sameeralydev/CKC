@@ -1,0 +1,298 @@
+/* Container for the entire form */
+.application-container {
+  width: 1300px; 
+  margin: 50px auto;
+  border: 1px solid #ccc; 
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+/* Header for the whole form */
+.application-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 10px 10px 5px 10px;
+}
+
+.application-header h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.application-header p {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* General styling for form sections */
+.form-section {
+  margin-top: 15px;
+  position: relative;
+}
+
+/* General section label (Section 1, Section 2, Section 3, etc.) */
+.section-label {
+  position: absolute;
+  top: -20px;
+  right: 10px;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Section Header (Yellow Bar) */
+.section-header {
+  background-color: #101365; /* Yellow color */
+  padding: 8px 10px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.section-header h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.section-header .header-instruction {
+    font-size: 14px;
+    font-weight: normal;
+    margin: 3px 0 0 0;
+}
+
+/* --- Shared Table Styling --- */
+.personal-data-table, .experience-table, .operation-table, 
+.property-table, .neighborhood-table, .location-table, 
+.financial-table, .availability-table, .remarks-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0;
+}
+
+.personal-data-table td, .experience-table td, .operation-table td, 
+.property-table td, .neighborhood-table td, .financial-table td, 
+.availability-table td, .remarks-table td {
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  height: 30px; 
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+/* Style for input fields inside table cells */
+.personal-data-table input, .experience-table input[type="text"], .operation-table input[type="text"], 
+.property-table input[type="text"], .neighborhood-table input[type="text"], .financial-table input,
+.availability-table input {
+    width: 100%;
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* General Checkbox/Radio Group Spacing */
+.radio-group input,
+.checkbox-group input {
+    width: auto;
+}
+.radio-group label,
+.checkbox-group label {
+    margin-right: 15px;
+    margin-left: 5px;
+    white-space: nowrap;
+}
+
+/* --- Personal Data Table (Section 1) --- */
+.personal-data-table .label-col { width: 15%; font-weight: normal; color: #333; }
+.personal-data-table .right-col { width: 20%; }
+.personal-data-table .data-col { width: 30%; font-weight: bold; }
+.personal-data-table .gender-col input[type="radio"], .personal-data-table .gender-col label { margin-right: 15px; }
+
+/* --- Educational Background (Section 2) --- */
+.educational-options {
+  display: flex; flex-wrap: wrap; padding: 10px 0; border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc; border-bottom: 1px solid #ccc;
+}
+.educational-options .option { display: flex; align-items: center; padding: 0 10px; height: 30px; border-right: 1px solid #ccc; }
+.educational-options .numbered { border-right: none; font-weight: bold; }
+.educational-options .other-option { border-right: none; }
+.educational-options label { margin-left: 5px; }
+
+/* --- Experience Table (Section 3) --- */
+.experience-table .label-col { font-weight: normal; color: #333; }
+.experience-table .experience-label { width: 35%; }
+.experience-table .narrow-label { width: 8%; }
+.experience-table .half-width { width: 20%; }
+.experience-table .header-row .header-col { text-align: center; font-weight: bold; background-color: #f7f7f7; }
+.experience-table .header-prefix { width: 3%; border: none; }
+.experience-table .data-col-prefix { width: 3%; text-align: right; font-weight: bold; }
+.experience-table .checkbox-col, .experience-table .checkbox-header { width: 17%; text-align: center; }
+.experience-table .sub-question-header { background-color: #f7f7f7; }
+.extra-sheet-note { font-size: 12px; font-style: italic; padding: 5px 10px; text-align: left; margin-top: 5px; }
+
+/* --- Operation Table (Section 4) --- */
+.operation-table .question-no { width: 5%; text-align: center; font-weight: bold; }
+.operation-table .question-label { width: 25%; font-weight: normal; }
+.operation-table .question-data { width: 35%; }
+.operation-table .data-colspan { width: 70%; }
+.operation-table .multiple-units { display: flex; align-items: center; padding: 5px 10px; }
+.operation-table .multiple-units label { margin-right: 10px; }
+.operation-table .multiple-units .multiple-input-label { margin-left: 10px; white-space: nowrap; }
+.operation-table .multiple-units .small-input { width: 60px; margin-left: 5px; border: 1px solid #ccc; padding: 3px; }
+
+/* --- Location Instruction Text --- */
+.location-instruction { padding: 15px 10px 0; font-size: 14px; }
+.location-instruction .bold-text { font-weight: bold; margin-bottom: 5px; }
+
+/* --- Location Table (Section 5) --- */
+.location-table th, .location-table td { border: 1px solid #ccc; padding: 0; font-size: 14px; vertical-align: top; }
+.location-table th { padding: 8px 10px; text-align: left; background-color: #f7f7f7; font-weight: bold; }
+.location-table .col-locality { width: 25%; }
+.location-table .col-city { width: 25%; }
+.location-table .col-reason { width: 50%; }
+.location-table .data-cell { height: 60px; padding: 0; }
+.location-table .data-cell textarea {
+    width: 100%; height: 100%; min-height: 50px; border: none; padding: 5px;
+    box-sizing: border-box; resize: none; font-family: Arial, sans-serif; font-size: 14px;
+}
+.location-table .large-cell { height: 180px; }
+.location-table .large-cell textarea { min-height: 170px; }
+
+
+/* --- Property Table (Section 6) Styling --- */
+.property-table .question-no { width: 5%; text-align: center; font-weight: bold; }
+.property-table .question-label { width: 30%; font-weight: normal; }
+.property-table .wide-label { width: 25%; }
+.property-table .question-data { width: auto; }
+.property-table .radio-group input, .property-table .radio-group label { margin-right: 25px; }
+.property-table .facility-cell { padding: 0; border: none; }
+.property-table .facility-row { display: flex; width: 100%; border-bottom: 1px solid #ccc; }
+.property-table .facility-row.last-row { border-bottom: none; }
+.property-table .facility-item { display: flex; align-items: center; width: 50%; height: 40px; padding-left: 10px; border-right: 1px solid #ccc; }
+.property-table .facility-item.right-col { border-right: none; }
+.property-table .facility-prefix { font-weight: bold; margin-right: 8px; }
+.property-table .facility-item label { margin-left: 5px; }
+
+/* --- Neighborhood Table (Section 7) Styling --- */
+.neighborhood-table .question-no { width: 5%; text-align: center; font-weight: bold; }
+.neighborhood-table .question-label-full { font-weight: normal; }
+.neighborhood-table .header-row .header-col { text-align: center; font-weight: bold; background-color: #f7f7f7; }
+.neighborhood-table .header-prefix-col { width: 5%; border: none; }
+.neighborhood-table .school-name { width: 70%; }
+.neighborhood-table .fee-col { width: 25%; }
+.neighborhood-table .prefix-col { width: 5%; text-align: right; font-weight: bold; background-color: #f7f7f7; }
+
+/* --- Financial Commitments Table (Section 8) Styling --- */
+.financial-table .question-no { width: 5%; text-align: center; font-weight: bold; }
+.financial-table .question-label { width: 50%; font-weight: normal; }
+.financial-table .rs-label { width: 5%; text-align: center; font-weight: bold; }
+.financial-table .investment-input { width: 40%; }
+.financial-table .financing-options { width: 95%; }
+.financial-table .financing-options input { width: auto; }
+.financial-table .financing-options label { margin-right: 25px; }
+
+
+/* --- Availability Table (Section 9) Styling --- */
+.availability-table .question-no { width: 5%; text-align: center; font-weight: bold; }
+.availability-table .header-col { text-align: center; font-weight: bold; background-color: #f7f7f7; }
+.availability-table .prefix-col { width: 5%; text-align: right; font-weight: bold; background-color: #f7f7f7; }
+.availability-table .date-col, .availability-table .time-col { width: 47.5%; }
+
+.availability-table input[type="date"], 
+.availability-table input[type="time"] {
+    width: 100%;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    height: 30px; 
+    box-sizing: border-box;
+}
+
+/* --- Opinion & Remarks Table (Section 10) Styling --- */
+.remarks-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.remarks-table td {
+  border: 1px solid #ccc;
+  padding: 0; /* Control padding via textarea */
+  height: 50px; /* Increased height for remarks rows */
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.remarks-table .prefix-col {
+    width: 5%;
+    text-align: center;
+    font-weight: bold;
+    background-color: #f7f7f7;
+    height: 50px;
+}
+
+.remarks-table .data-col {
+    width: 47.5%; /* Two equal columns for remarks */
+    padding: 0;
+}
+
+.remarks-table .data-col textarea {
+    width: 100%;
+    height: 100%;
+    min-height: 40px;
+    border: none;
+    padding: 5px;
+    box-sizing: border-box;
+    resize: none;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+
+/* --- Closing/Submission Section Styling --- */
+.submission-section {
+    padding: 20px 10px;
+    font-size: 14px;
+}
+
+.submission-section .signature-area {
+    width: 300px;
+    margin-bottom: 15px;
+}
+
+.submission-section .signature-line {
+    border-bottom: 1px solid black;
+    height: 1px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.submission-section .date-line {
+    margin: 10px 0;
+}
+
+.submission-section .date-line input {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 150px;
+    margin-left: 5px;
+}
+
+.submission-section .send-to-label {
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.submission-section .address-block p {
+    margin: 5px 0;
+    line-height: 1.3;
+}
+
+.submission-section .bold-text {
+    font-weight: bold;
+}

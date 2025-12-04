@@ -1,0 +1,246 @@
+@import url('../../../App.css');
+
+.news_main {
+    position: relative;
+    height: 973px;
+    overflow: hidden;
+}
+
+.news_img {
+    width: 100%;
+    top: -120px;
+    position: absolute;
+}
+
+.news_line {
+    position: absolute;
+    left: 0;
+    top: 70px;
+    clip-path: inset(0 0 0 100%);
+    animation: newsdrawLine 3s linear infinite;
+    z-index: 1;
+}
+
+@keyframes newsdrawLine {
+    0% {
+        clip-path: inset(0 0 0 100%);
+        /* Fully hidden */
+    }
+
+    100% {
+        clip-path: inset(0 0 0 0%);
+        /* Fully visible */
+    }
+}
+
+.news_rocket {
+    position: absolute;
+    left: 526px;
+    top: 190px;
+}
+
+.news_content {
+    padding-top: 20rem;
+    position: relative;
+    z-index: 1;
+}
+
+.news_title {
+    font-family: 'RecoletaAlt';
+    font-size: 65px;
+    line-height: 86px;
+    color: var(--blueColor);
+    margin-bottom: 0;
+}
+
+.news_card_body {
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 15px 30px;
+}
+
+.news_date_title {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--primaryColor);
+    margin-bottom: 0;
+}
+
+.news_desp{
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 36px;
+    color: var(--blackColor);
+    margin-bottom: 0;
+}
+
+.news_sub_desp{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--blackColor);
+    margin-bottom: 0;
+}
+
+.news_read{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--primaryColor);
+    margin-bottom: 0;
+}
+
+.news_bg{
+    background-image: url("../../../assets/images/news_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    height: 540px;
+    position: relative;
+    overflow: hidden;
+    padding: 320px 20px 0px;
+}
+
+.news_bg::before {
+    content: "";
+    position: absolute;
+    border-radius: 30px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../../assets/images/news_bg_layer.png"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+
+.news_bg_date{
+    font-family: 'Montserrat';
+    font-size: 19px;
+    line-height: 35px;
+    color: var(--whiteColor);
+    margin-bottom: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.news_bg_desp{
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 36px;
+    color: var(--whiteColor);
+    margin-bottom: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.news_bg_sub_desp{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--whiteColor);
+    margin-bottom: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.news_btn {
+    border-radius: 50px;
+    padding: 8px 10px 8px 25px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    display: flex;
+    gap: 20px;
+    background: #707070;
+    border: none;
+    align-items: center;
+    color: var(--whiteColor);
+    margin-top: 10px;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+
+.news_btn:hover {
+    transform: scale(1.1);
+}
+
+.news_circle {
+    border-radius: 50px;
+    background: var(--whiteColor);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news_circle_icon {
+    color: #707070;
+    font-size: 20px;
+}
+
+.indicator_div{
+    position: absolute;
+    right: 20px;
+    top: 250px;
+}
+
+.news_btn_one{
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    background: #707070 !important;
+    border: none;
+    position: relative;
+    z-index: 1;
+    border: none;
+    background: transparent;
+    
+}
+
+.news_active{
+    background: var(--whiteColor) !important;
+    width: 12px;
+    height: 32px;
+    position: relative;
+    z-index: 1;
+    border-radius: 50px;
+}
+
+.news_prev_controller{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid var(--secondaryblueColor);
+    background: transparent;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondaryblueColor);
+    position: relative;
+    z-index: 1;
+}
+
+.news_water_img{
+    position: absolute;
+    right: -70px;
+    top: 50px;
+}
+
+.news_bulb_img{
+    position: absolute;
+    left: -70px;
+    top: 450px;
+}
+
+.news_homework_img{
+    position: absolute;
+    left: -50px;
+    top: 750px;
+}

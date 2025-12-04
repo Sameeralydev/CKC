@@ -1,0 +1,84 @@
+@import url('../../../../App.css');
+
+.mon-about-main{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--secondaryblueColor);
+    text-align: center;
+}
+
+.bg-mon-color{
+    background: #f0e2c8;
+}
+
+.mon-about-title{
+    text-decoration: underline;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    text-align: center;
+}
+
+.mon-about-desp{
+    width: 750px;
+    word-spacing: 2px;
+    font-family: 'RecoletaAlt';
+    text-align: center;
+    z-index: 1;
+}
+.mon-specs-title{
+    width: max-content;
+    text-decoration: underline;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    text-align: center;
+}
+
+.mon-specs-head{
+    margin: 15px 0 10px 0;
+    width: max-content;
+    text-decoration: underline;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    text-align: left;
+}
+
+.mon-specs-list{
+    margin: 3px 0 5px 0;
+    width: 750px;
+    font-family: 'RecoletaAlt';
+    /* font-weight: 800; */
+    text-align: left;
+    word-spacing: 2px;
+    z-index: 1;
+}
+
+.mon-specs-container2{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+}
+
+.mon-specs-head2{
+    margin: 25px 0 25px 0;
+    width: 900px;
+    /* text-decoration: underline; */
+    font-family: 'Montserrat';
+    font-weight: 800;
+    text-align: center;
+}
+
+.mon-specs-list2{
+    margin: 3px 0px 5px 75px;
+    width: 750px;
+    font-family: 'RecoletaAlt';
+    /* font-weight: 800; */
+    text-align: left;
+    word-spacing: 2px;
+    z-index: 1;
+}
+
+.mon-card:hover{
+    background: var(--secondaryblueColor);
+    color: white;
+}

@@ -1,0 +1,70 @@
+@import url('../../../../App.css');
+
+.admissionpro-about-main{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--secondaryblueColor);
+    text-align: center;
+}
+
+.bg-admissionpro-color{
+    background: #f0e2c8;
+}
+
+.admissionpro-about-title{
+    width: max-content;
+    text-decoration: underline;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+span{
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.admissionpro-about-desp{
+    width: 750px;
+    word-spacing: 2px;
+    font-family: 'RecoletaAlt';
+    text-align: center;
+    z-index: 1;
+}
+.admissionpro-about-desp-head{
+    text-decoration: underline;
+     width: 750px;
+     font-weight: 700;
+    word-spacing: 2px;
+    font-family: 'RecoletaAlt';
+    text-align: center;
+    z-index: 1;
+
+}
+
+.admissionpro-specs{
+    width: 600px;
+    margin-bottom: 30px;
+    margin-top: -7px;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    font-family: 'RecoletaAlt';
+}
+.admission-specs-list{
+    width: 600px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    font-family: 'RecoletaAlt';
+}
+
+.admissionpro-card:hover{
+    background: var(--secondaryblueColor);
+    color: white;
+}

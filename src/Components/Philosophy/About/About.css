@@ -1,0 +1,39 @@
+@import url('../../../App.css');
+
+.fac-about-main{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--secondaryblueColor);
+    text-align: center;
+}
+
+.bg-fac-color{
+    background: #f0e2c8;
+}
+.fac-about-title1{
+    text-decoration: underline;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.fac-about-title{
+    text-decoration: underline;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    text-align: center;;
+}
+
+.fac-about-desp{
+    word-spacing: 2px;
+    font-size: 18px;
+    font-family: 'RecoletaAlt';
+    text-align: center;
+    letter-spacing: .5px;
+}
+
+.fac-card:hover{
+    background: var(--secondaryblueColor);
+    color: white;
+}

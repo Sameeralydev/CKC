@@ -1,0 +1,130 @@
+/* --- Global Container and Background --- */
+.franchise-models-container {
+    padding: 0; /* Remove container-fluid padding */
+    background-color: #ffffff; /* White background for the top */
+}
+
+/* --- Introductory Text Section --- */
+.intro-section {
+    padding: 40px 15px 20px;
+    max-width: 900px; /* Constrain width for readability */
+    margin: 0 auto;
+}
+
+.intro-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #495057;
+    margin-bottom: 30px;
+}
+
+.section-heading {
+    font-size: 24px;
+    font-weight: 800;
+    color: #000;
+    margin-top: 0;
+}
+
+.types-of-schools-heading {
+    color: #007bff; /* Example: Blue for contrast */
+}
+
+.types-of-schools-list {
+    list-style: disc;
+    padding-left: 20px;
+    font-size: 16px;
+    color: #495057;
+    margin-bottom: 50px;
+}
+
+.types-of-schools-list li {
+    margin-bottom: 10px;
+}
+
+/* --- FRANCHISE MODELS Heading and Green Background --- */
+.models-header-bg {
+    width: 88.2%;
+    display: flex;
+    justify-self: center;
+    background-color: #20c997; /* Teal/Green color from the image */
+    padding: 20px 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.franchise-models-heading {
+    font-size: 36px;
+    font-weight: 900;
+    color: #ffffff;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+/* --- Franchise Models Grid --- */
+.models-grid-container {
+    background-color: #20c997; /* Continue the teal/green background */
+    padding: 60px 40px;
+    display: grid;
+    /* 3 columns for desktop */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 50px 30px;
+    justify-items: center;
+    /* width: 100%; */
+    margin: 0 auto;
+}
+
+/* --- Circular Card Styles --- */
+.model-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.model-circle:hover {
+    transform: scale(1.05);
+}
+
+.circle-text {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.2;
+    padding: 10px;
+}
+
+/* Color Classes */
+.model-circle.primary {
+    background-color: #dc3545; /* Red color */
+}
+
+.model-circle.secondary {
+    background-color: #007bff; /* Blue color */
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 992px) {
+    /* 2 columns for tablet view */
+    .models-grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    /* 1 column for mobile view */
+    .models-grid-container {
+        grid-template-columns: 1fr;
+        padding: 40px 20px;
+    }
+    .model-circle {
+        width: 180px;
+        height: 180px;
+    }
+}
