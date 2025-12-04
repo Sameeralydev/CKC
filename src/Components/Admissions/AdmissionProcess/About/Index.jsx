@@ -27,15 +27,15 @@ export const AboutSection = () => {
             <h1 className="admissionpro-about-title">
               General Process            </h1>
             <p className="admissionpro-about-desp">
-              The admission process at Future Foundation Schools is simple and transparent. It works on the belief that a personal interaction between parents / authorized guardians, the prospective student and the school's authorized representatives is of far greater value than any conventional admission test. The process is aimed at giving us an insight into the type of education approach and environment you believe would be appropriate for your child to maximize his/her potential while giving us a glimpse of the child's strengths, learning needs and potential. It also gives you, as parents / authorized guardians, a first-hand opportunity to obtain an understanding of how our students and faculty engage with each other, our overall offering, curricula and our educational approach.</p>
+              The admission process at Crescent Kids Campus is simple and transparent. It works on the belief that a personal interaction between parents / authorized guardians, the prospective student and the school's authorized representatives is of far greater value than any conventional admission test. The process is aimed at giving us an insight into the type of education approach and environment you believe would be appropriate for your child to maximize his/her potential while giving us a glimpse of the child's strengths, learning needs and potential. It also gives you, as parents / authorized guardians, a first-hand opportunity to obtain an understanding of how our students and faculty engage with each other, our overall offering, curricula and our educational approach.</p>
             
             <p className="admissionpro-about-desp">
-              The admission process at Future Foundation Schools begins on the 15th of December and till the 15th of January of every calendar year. Admissions are granted on a first come first served basis till seats are available.</p>
+              The admission process at Crescent Kids Campus begins on the 15th of December and till the 15th of January of every calendar year. Admissions are granted on a first come first served basis till seats are available.</p>
             <p className="admissionpro-about-desp-head">
               The following are the steps in the admission process for Parents/ Authorized Guardians of the child:</p>
             <div className="admissionpro-specs">
               <p>
-                <span>Step 1</span> – Put an inquiry at our admission office of Future Foundation Schools to get an orientation and prospectus to learn about the school’s philosophy, approach and offering. If you have any special queries you can make an appointment school principal.
+                <span>Step 1</span> – Put an inquiry at our admission office of Crescent Kids Campus to get an orientation and prospectus to learn about the school’s philosophy, approach and offering. If you have any special queries you can make an appointment school principal.
               </p>
               
               <p>

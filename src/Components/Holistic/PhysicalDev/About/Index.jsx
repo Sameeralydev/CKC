@@ -27,9 +27,9 @@ export const AboutSection = () => {
             	Physical Development
             </h1>
             <p className="phydev-about-desp">
-Future Foundation Schools firmly believes that "a healthy body fosters a healthy mind." Academic learning and sports education are complementary and essential to the holistic development of children and youth. Physical education and sports play a fundamental role in early childhood development, contributing to both physical growth and the acquisition of life skills. Through sports, children learn valuable lessons in teamwork, honesty, fair play, self-respect, respect for others, and adherence to rules and regulations.</p>
+Crescent Kids Campus firmly believes that "a healthy body fosters a healthy mind." Academic learning and sports education are complementary and essential to the holistic development of children and youth. Physical education and sports play a fundamental role in early childhood development, contributing to both physical growth and the acquisition of life skills. Through sports, children learn valuable lessons in teamwork, honesty, fair play, self-respect, respect for others, and adherence to rules and regulations.</p>
             <p className="phydev-about-desp">
-At Future Foundation Schools, we provide a platform for students to engage in sports and learn how to handle competition, as well as cope with both winning and losing. These experiences emphasize the significant impact that physical education and sports have on a child’s social, emotional, and moral development, in addition to building physical skills and abilities.</p>
+At Crescent Kids Campus, we provide a platform for students to engage in sports and learn how to handle competition, as well as cope with both winning and losing. These experiences emphasize the significant impact that physical education and sports have on a child’s social, emotional, and moral development, in addition to building physical skills and abilities.</p>
             <p className="phydev-about-desp">
 Research consistently highlights the positive effects of sport and exercise on physical health, growth, and development. Physical activity not only promotes overall health but also stimulates brain development and enhances academic performance.</p>
             <p className="phydev-about-desp">

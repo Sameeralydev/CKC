@@ -912,3 +912,28 @@
         display: none;
     }
 }
+
+
+/* Example for a decorative image */
+.about_ellipse_img {
+  position: absolute;
+  /* Desktop styles: */
+  top: 100px;
+  right: 50px;
+}
+
+/* Mobile adjustments (up to 992px, the lg breakpoint): */
+@media (max-width: 991.98px) {
+  /* Option A: Hide it (Best practice for complex visuals) */
+  .about_ellipse_img {
+    display: none; 
+  }
+
+  /* Option B: Drastically shrink and move it (If necessary) */
+  .about_rocket_img {
+    width: 50px; /* Much smaller */
+    top: 20px;
+    left: 10px;
+    opacity: 0.2; /* Less dominant */
+  }
+}

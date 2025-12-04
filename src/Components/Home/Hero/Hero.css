@@ -14,10 +14,80 @@
     justify-content: center;
 }
 
-video {
+/* Add to Hero.css */
+
+/* 1. Base Container Setup */
+.slider_container {
+  position: relative; 
+  /* Inherits width from .video_container, but ensure it has a defined height/aspect ratio */
+  /* e.g., height: 400px; or use padding-bottom trick for responsive aspect ratio */
+  overflow: hidden;
+}
+
+/* 2. Image Wrapper and Display */
+.slider_image_wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.slider_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image covers the area without distorting aspect ratio */
+  /* This transition helps create a smooth fade effect */
+  transition: opacity 0.5s ease-in-out; 
+}
+
+/* 3. Navigation Controls (Arrows) */
+.slider_control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%; /* Optional: make them round */
+}
+
+.slider_prev {
+  left: 10px;
+}
+
+.slider_next {
+  right: 10px;
+}
+
+/* 4. Navigation Dots */
+.slider_dots {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  text-align: center;
+  z-index: 11;
+}
+
+.dot {
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  margin: 0 4px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.active_dot,
+.dot:hover {
+  background-color: #ffffff;
+}
+.video_container img {
     width: 100%;
-    height: 100%;
-    object-fit: fill;
+    height: 700px;
+    object-fit: cover;
+    position: absolute;
 }
 
 video::-webkit-media-controls-timeline,

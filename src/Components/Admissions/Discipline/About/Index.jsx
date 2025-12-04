@@ -27,12 +27,12 @@ export const AboutSection = () => {
             <h1 className="discipline-about-title">
               Code of Dress            </h1>
             <li className="discipline-about-desp">
-              The purpose of discipline, conduct and code of dress regulations at Future Foundation Schools is to help the student set a standard for their appearance that is appropriate within the accepted guidelines of Future Foundation Schools.  Every student is expected to demonstrate pride in their appearance, because it reflects throughout Future Foundation Schools on each student, individually as well as collectively.  Part of career planning is learning to dress appropriately for the job and various occasions.</li>
+              The purpose of discipline, conduct and code of dress regulations at Crescent Kids Campus is to help the student set a standard for their appearance that is appropriate within the accepted guidelines of Crescent Kids Campus.  Every student is expected to demonstrate pride in their appearance, because it reflects throughout Crescent Kids Campus on each student, individually as well as collectively.  Part of career planning is learning to dress appropriately for the job and various occasions.</li>
 
             <li className="discipline-about-desp">
-              Future Foundation Schools strives to create an environment where dress and grooming standards minimize distractions from learning and promote a sense of school pride and professionalism.  We also hope to deemphasize clothing as a means of promoting negative influences within the student body.  Having a standardized dress code will help support a safe school environment and will contribute to creating a productive and positive learning environment.  </li>
+              Crescent Kids Campus strives to create an environment where dress and grooming standards minimize distractions from learning and promote a sense of school pride and professionalism.  We also hope to deemphasize clothing as a means of promoting negative influences within the student body.  Having a standardized dress code will help support a safe school environment and will contribute to creating a productive and positive learning environment.  </li>
             <h4 className="discipline-about-title2">
-              ACCEPTABLE WEAR FOR FUTURE FOUNDATION SCHOOLS           </h4>
+              ACCEPTABLE WEAR FOR CRESCENT KIDS CAMPUS           </h4>
               <div className="discipline-specs-container">
                 <p>
                   PRE-SCHOOL GIRLS STUDENT DRESS APPAREL (Montessori Junior, senior and advanced)

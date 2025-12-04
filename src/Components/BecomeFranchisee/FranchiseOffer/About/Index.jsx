@@ -506,7 +506,7 @@ export const AboutSection = () => {
         <p className="send-to-label">Please send your Application to:</p>
         <div className="address-block">
           <p className="address-line bold-text">Head Office</p>
-          <p className="address-line bold-text">FFS Schools</p>
+          <p className="address-line bold-text">Crescent Kids Campus</p>
           <p className="address-line">Baraf Khana Chowk Misrial Road Rwp</p>
         </div>
       </div>

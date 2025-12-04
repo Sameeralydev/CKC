@@ -55,7 +55,7 @@ Partnership with Parents: We work closely with parents, maintaining strong, supp
           <div className="mon-specs-container2">
              <h3 className="mon-specs-title">	Emphasis on Writing Workshops and Handwriting Uniformity</h3>
             <p className="mon-specs-head2">
-              At Future Foundation Schools, we place a strong emphasis on developing writing skills from an early age. Writing workshops are a key component of our Preschool curriculum, designed to:
+              At Crescent Kids Campus, we place a strong emphasis on developing writing skills from an early age. Writing workshops are a key component of our Preschool curriculum, designed to:
             </p>
             <li className="mon-specs-list2">
 Promote Early Writing Skills: Children are encouraged to practice writing through creative activities and structured exercises that focus on letter formation and early writing skills.            </li>

@@ -131,6 +131,73 @@
     cursor: pointer;
 }
 
+/* --- MOBILE MENU STYLES --- */
+
+/* This container holds all the mobile links and drops down */
+.mobile_nav_menu {
+    /* Use the same background color as the navbar */
+    background: var(--blueColor); 
+    position: absolute;
+    top: 100%; /* Position right below the main header row */
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1; 
+    /* Optional: Add transition for smooth opening */
+    transition: max-height 0.3s ease-out; 
+}
+
+.mobile_menu_item {
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mobile_link, 
+.mobile_dropdown_header {
+    display: block;
+    padding: 12px 0;
+    text-decoration: none;
+    color: var(--whiteColor);
+    font-family: 'Montserrat';
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.mobile_dropdown_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile_dropdown_submenu {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    background: rgba(0, 0, 0, 0.1); /* Slightly darker background for sub-menu */
+}
+
+.mobile_dropdown_item {
+    padding: 8px 0;
+    text-decoration: none;
+    color: var(--whiteColor);
+    font-family: 'Montserrat';
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.mobile_link:hover,
+.mobile_dropdown_header:hover,
+.mobile_dropdown_item:hover {
+    color: var(--secondaryColor);
+}
+
+
+/* --- DESKTOP MEDIA QUERIES --- */
+
 @media (min-width: 1200px) and (max-width: 1400px){
     .navbar_link {
         gap: 6px;

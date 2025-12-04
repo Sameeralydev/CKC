@@ -24,7 +24,7 @@ export const Footer = () => {
         <div className="d-flex justify-content-center align-items-center flex-column">
           <img src={Logo} alt="" className="footer_logo" />
           <p className="footer_desp">
-            In the year 1998, Future Foundation School started its journey to
+            In the year 1998, Crescent Kids Campus started its journey to
             meet the goals set by the leadership.
           </p>
         </div>

@@ -44,7 +44,7 @@ Program Objectives</p>
                 
               </div>
               <h3 className="talenthunt-about-title">
-            	The Talent Development Program at Future Foundation Schools
+            	The Talent Development Program at Crescent Kids Campus
             </h3>
             <p className="talenthunt-about-desp">
               We have developed the talent development program in the school to identify and nurture students' talents. The program goes beyond age or grade-level expectations by providing challenges as per the learner's interest and readiness.</p>

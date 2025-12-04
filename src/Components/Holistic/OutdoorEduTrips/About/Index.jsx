@@ -28,7 +28,7 @@ export const AboutSection = () => {
             	Outdoor Educational Trips
             </h1>
             <p className="oet-about-desp">
-Future Foundation Schools offers students the opportunity to engage in outdoor education, where learning takes place in natural environments. Our outdoor education programs include residential or wilderness-based experiences, allowing students to participate in a range of adventurous challenges and activities, such as hiking, climbing, canoeing, ropes courses, and group games. These activities are designed to foster experiential learning and environmental awareness, building on the principles of experiential and environmental education.</p>
+Crescent Kids Campus offers students the opportunity to engage in outdoor education, where learning takes place in natural environments. Our outdoor education programs include residential or wilderness-based experiences, allowing students to participate in a range of adventurous challenges and activities, such as hiking, climbing, canoeing, ropes courses, and group games. These activities are designed to foster experiential learning and environmental awareness, building on the principles of experiential and environmental education.</p>
             <p className="oet-about-desp">
 Through these outdoor experiences, students are encouraged to:</p>
               <div className="oet-specs">
@@ -41,7 +41,7 @@ Enhance their personal growth and social development            </li>
 Develop a deeper connection with nature            </li>
               </div>
             <p className="oet-about-desp">
-At Future Foundation Schools, we organize outdoor educational visits and field trips to promote physical health, mental well-being, and self-confidence in our students. These trips are designed to be enjoyable and stress-free, providing hands-on activities that engage and inspire students, helping them become healthier, happier, and more courageous individuals.</p>
+At Crescent Kids Campus, we organize outdoor educational visits and field trips to promote physical health, mental well-being, and self-confidence in our students. These trips are designed to be enjoyable and stress-free, providing hands-on activities that engage and inspire students, helping them become healthier, happier, and more courageous individuals.</p>
          
              </div>
           <div className="col-4">

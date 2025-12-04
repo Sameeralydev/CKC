@@ -1,7 +1,9 @@
-import React, { useState } from "react";
-import { Link } from "react-router";
+import React, { useState, useCallback } from "react";
+// Assuming you use 'react-router-dom' v6, but keeping 'react-router' Link for fidelity
+import { Link } from "react-router"; 
 import "./Navbar.css";
-import Navbar_line from "../assets/images/navbar.png";
+// NOTE: For real-world use, prefer placing images directly in the public folder or using bundler imports
+import Navbar_line from "../assets/images/navbar.png"; 
 import Logo from "../assets/images/logo.png";
 import {
   MdKeyboardArrowDown,
@@ -9,10 +11,35 @@ import {
   MdArrowForward,
 } from "react-icons/md";
 import { IoReorderThreeOutline } from "react-icons/io5";
-import navbarlinks from "../Data/navbar";
+// Ensure this file exports an array of link objects
+import navbarlinks from "../Data/navbar"; 
 
 export const CustomNavbar = () => {
-  const [openDropdown, setOpenDropdown] = useState(null);
+  // State for desktop dropdown (on hover)
+  const [openDropdownIndex, setOpenDropdownIndex] = useState(null);
+  // State for mobile menu toggle
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  // State for mobile dropdowns (on click)
+  const [mobileOpenDropdownIndex, setMobileOpenDropdownIndex] = useState(null);
+
+  // Use useCallback for function stability
+  const toggleMenu = useCallback(() => {
+    setIsMenuOpen(prev => !prev);
+    // Reset mobile dropdown when main menu is closed
+    if (isMenuOpen) {
+      setMobileOpenDropdownIndex(null);
+    }
+  }, [isMenuOpen]);
+
+  const handleMobileDropdownClick = useCallback((index) => {
+    setMobileOpenDropdownIndex(prevIndex => (prevIndex === index ? null : index));
+  }, []);
+
+  // Function to close the main menu after clicking a link
+  const closeMenu = useCallback(() => {
+    setIsMenuOpen(false);
+    setMobileOpenDropdownIndex(null); // Also ensure all sub-menus are closed
+  }, []);
 
   return (
     <div className="container-fluid navbar_bg">
@@ -24,38 +51,43 @@ export const CustomNavbar = () => {
           style={{ width: "98%" }}
         />
         <div className="d-flex justify-content-between align-items-center pt-3 pb-2">
+          {/* Logo Link */}
           <Link to="/">
             <img src={Logo} alt="Logo" className="navbar-logo" />
           </Link>
-          <div className="d-none d-sm-none d-lg-block">
+
+          {/* --- DESKTOP NAV LINKS (Visible lg and up) --- */}
+          <div className="d-none d-lg-block">
             <div className="d-flex gap-lg-2 gap-xl-2 gap-xxl-3 align-items-center">
-              {/* <Link to="/" className="homes">
-                <div className="navbar_home">Home</div>
-              </Link> */}
               {navbarlinks.map((link, index) => (
                 <div
-                  key={index}
+                  key={`desktop-${index}`}
                   className="position-relative"
-                  onMouseEnter={() => setOpenDropdown(index)}
-                  onMouseLeave={() => setOpenDropdown(null)}
+                  // Use separate handlers for better clarity
+                  onMouseEnter={() => setOpenDropdownIndex(index)}
+                  onMouseLeave={() => setOpenDropdownIndex(null)}
                 >
                   <div className="navbar_link">
                     {link.menuItems ? (
+                      // Dropdown main item
                       <>
                         {link.label}
-                        {openDropdown === index ? (
+                        {openDropdownIndex === index ? (
                           <MdKeyboardArrowUp className="navbar_icon" />
                         ) : (
                           <MdKeyboardArrowDown className="navbar_icon" />
                         )}
                       </>
                     ) : (
-                      <Link className="lms_page" to={link.link} activeClassName="active-link">{link.label}</Link> // Render direct link for last two items
+                      // Direct link
+                      <Link className="lms_page" to={link.link} activeClassName="active-link">
+                        {link.label}
+                      </Link>
                     )}
                   </div>
 
-                  {/* Dropdown Menu */}
-                  {openDropdown === index && link.menuItems && (
+                  {/* Desktop Dropdown Menu */}
+                  {openDropdownIndex === index && link.menuItems && (
                     <div className="dropdown_menu">
                       {link.menuItems.map((item, i) => (
                         <Link to={item.link} className="dropdown_item" key={i}>
@@ -68,22 +100,88 @@ export const CustomNavbar = () => {
               ))}
             </div>
           </div>
+          
+          {/* Right-side elements */}
           <div className="d-flex align-items-center gap-2">
-            <div className="d-none d-sm-none d-lg-block">
+            {/* Admission Button (Visible lg and up) */}
+            <div className="d-none d-lg-block">
               <Link to="/admissionnow" style={{ textDecoration: "none", color: "inherit" }}>
                 <button className="navbar_btn" type="button">
-                  Admission Now
+                  Admission Now 
                   <div className="navbar_circle">
                     <MdArrowForward className="navbar_circle_icon" />
                   </div>
                 </button>
               </Link>
             </div>
-            <div className="navbar_toggle d-lg-none">
+            
+            {/* Hamburger Toggle Icon (Visible below lg) */}
+            <div className="navbar_toggle d-lg-none" onClick={toggleMenu}>
               <IoReorderThreeOutline />
             </div>
           </div>
         </div>
+
+        {/* --- MOBILE NAV MENU (Conditional rendering based on isMenuOpen) --- */}
+        {isMenuOpen && (
+          <div className="mobile_nav_menu d-lg-none">
+            {navbarlinks.map((link, index) => (
+              <div key={`mobile-${index}`} className="mobile_menu_item">
+                {link.menuItems ? (
+                  // Mobile Dropdown Item (Toggles sub-menu on click)
+                  <div
+                    className="mobile_dropdown_header"
+                    onClick={() => handleMobileDropdownClick(index)}
+                  >
+                    {link.label}
+                    {mobileOpenDropdownIndex === index ? (
+                      <MdKeyboardArrowUp className="navbar_icon" />
+                    ) : (
+                      <MdKeyboardArrowDown className="navbar_icon" />
+                    )}
+                  </div>
+                ) : (
+                  // Mobile Direct Link
+                  <Link
+                    className="mobile_link"
+                    to={link.link}
+                    // Close menu when a direct link is clicked
+                    onClick={closeMenu}
+                  >
+                    {link.label}
+                  </Link>
+                )}
+
+                {/* Mobile Dropdown Sub-Menu */}
+                {mobileOpenDropdownIndex === index && link.menuItems && (
+                  <div className="mobile_dropdown_submenu">
+                    {link.menuItems.map((item, i) => (
+                      <Link
+                        to={item.link}
+                        className="mobile_dropdown_item"
+                        key={i}
+                        // Close menu when a sub-link is clicked
+                        onClick={closeMenu}
+                      >
+                        {item.label}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
+            
+            {/* Mobile Admission Button */}
+            <Link to="/admissionnow" className="w-full mt-4" onClick={closeMenu}>
+              <button className="navbar_btn w-full justify-content-center" type="button">
+                Admission Now
+                <div className="navbar_circle">
+                  <MdArrowForward className="navbar_circle_icon" />
+                </div>
+              </button>
+            </Link>
+          </div>
+        )}
       </div>
     </div>
   );
